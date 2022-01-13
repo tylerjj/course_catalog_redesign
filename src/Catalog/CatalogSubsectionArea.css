@@ -1,0 +1,42 @@
+.CatalogSubsectionArea {
+    padding:15px;
+}
+.CatalogSubsectionArea-HeaderContainer {
+    /* display: flex-inline; */
+    background: #d3d3d3;    
+    border-radius:15px;
+    box-shadow: 0px 04px 04px;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight:bold;
+    line-height: 1.1;
+
+}
+
+.CatalogSubsectionArea-HeaderTitle {
+    font-family: 'Saira Condensed', 'Roboto Condensed', 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+.CatalogSubsectionArea-HeaderSectionInfo {
+    font-size: 14px;
+    font-weight:bold;
+}
+.CatalogSubsectionArea-HeaderSectionInfo p{
+    font-size: 14px;
+    font-weight:100;
+}
+.CatalogSubsectionArea-List {
+    border-radius: 15px;
+    height:450px;
+    overflow-y: scroll;
+    margin-top: 20px;
+}
+
+.CatalogSubsectionArea-ListContent{
+    height:200px;
+}
+
+.CatalogSubsectionListCard .row .col p {
+    font-weight:bold;
+}

@@ -1,0 +1,10 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Saira+Condensed&display=swap'); */
+.CatalogCourseListCard {
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius:15px;
+    box-shadow: 0px 04px 4px;
+}
+
+.CatalogCourseListCard-Number {
+    font-family: 'Saira Condensed', 'Roboto Condensed', sans-serif;    
+}

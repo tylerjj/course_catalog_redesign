@@ -1,0 +1,13 @@
+.CartCourseList {
+    background-color: #A4161A;
+    /* box-shadow: 0px 04px 4px; */
+    height:680px;
+    margin-top:10px;
+    padding:5px;
+    /*position:absolute;*/
+    overflow-y: scroll;
+}
+
+.CartCourseList-Content, .CartCourseList-Content list-group {
+    background-color: #A4161A;
+}

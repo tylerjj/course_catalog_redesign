@@ -1,0 +1,10 @@
+
+.CartCourseListCard {
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius:15px;
+    box-shadow: 0px 04px 4px;
+}
+
+.CartCourseListCard-Number {
+    font-family: 'Saira Condensed', 'Roboto Condensed', sans-serif;    
+}

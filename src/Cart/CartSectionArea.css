@@ -1,0 +1,32 @@
+.CartSectionArea {
+    padding:15px;
+}
+.CartSectionArea-HeaderContainer {
+
+    background: #d3d3d3;    
+    border-radius:15px;
+    box-shadow: 0px 04px 04px;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.CartSectionArea-HeaderTitle {
+    font-family: 'Saira Condensed', 'Roboto Condensed', 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+.CartSectionArea-List {
+    border-radius: 15px;
+    height:500px;
+    overflow-y: scroll;
+    margin-inline:15px
+}
+
+.CartSectionArea-ListContent{
+    height:400px;
+}
+
+.CartSectionListCard .row .col p {
+    font-weight:bold;
+}

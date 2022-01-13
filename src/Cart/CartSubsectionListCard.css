@@ -1,0 +1,23 @@
+.CartSubsectionListCard {
+    border-radius:15px;
+    box-shadow: 0px 04px 4px;
+    height:inherit;
+}
+
+.CartSubsectionListCard-Number {
+    font-size:24px;
+}
+
+.CartSubsectionListCard-Times {
+    
+}
+
+.CartSubsectionListCard-AddToCart {
+    padding: 6px 20px;
+    padding-inline:20px;
+    color: #0B090A;
+    background: #F5F3F4;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-shadow: 04px 04px 2px;
+    border-radius: 35px;
+}

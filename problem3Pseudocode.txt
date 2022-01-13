@@ -1,0 +1,99 @@
+
+
+App.js
+
+	addToCartContents(courseName, sectionName, subsectionName){
+		if (!courseName){
+			Add nothing to cart.
+		}
+		let course = Get course with courseName === course.name.
+		set course.inCart to true.
+		if (!sectionName){
+			for every section in course.section
+				set section.inCart to true.
+				for every subsection in section
+					set subsection.inCart to true
+		} else {
+			let section = Get section with sectionName === section.name
+				set section.inCart to true.
+				if (!subsectionName){
+					for every subsection in section:
+						set subsection.inCart to true.
+				} else {
+				let subsection = Get subsection with subsectionName === subsection.name
+				}
+			}
+		}
+	}
+	
+	removeFromCartContents(courseName, sectionName, subsectionName){
+		if (!courseName){
+			Remove nothing from cart.
+		}
+		let course = Get course with courseName === course.name.
+		if (!sectionName){
+			set course.inCart to false
+			for every section in course.section
+				set section.inCart to false
+				for every subsection in section
+					set subsection.inCart to false
+		}
+		else {
+			let section = Get section with sectionName === section.name
+			if (!subsectionName){
+				set section.inCart to false.
+				for every subsection in section
+					set subsection.inCart to false
+			}
+			else {
+				let subsection = Get subsection with subsectionName === subsection.name
+				set subsection.inCart to false
+			}
+		}
+	}
+	
+	
+App.js
+
+	
+	App.js -> CourseArea.props = courses, cartContents, addToCartContents, removeFromCartContents
+				-> Course.props = course, course.name, cartContents, addToCartContents, removeFromCartContents
+					-> SectionArea.props = sections, course.name, cartContents, addToCartContents, removeFromCartContents
+							-> Section.props = section, section.name, course.name, cartContents, addToCartContents, removeFromCartContents
+								-> Subsection.props = subsection, subsection.name, section.name, course.name, cartContents, addToCartContents, removeFromCartContents
+	
+	
+			
+
+
+
+
+in App.js:
+
+	this.state = {
+		// data,
+		// filteredData,
+		// subjects,
+		// *NEW* cartContents (same as data except each object has an inCart boolean)
+	}
+	
+	addToCartContents(courseNumber, sectionNumber, subsectionNumber){
+		// Goes through this.state.cartContents and updates inCart values.
+	}
+
+	in render:
+		<CourseArea.js ...... add={this.state.addToCartContents} />
+		
+in CourseArea.js
+	
+	in getCourses:
+		<Course ...... add={this.props.add} />
+
+in Course.js
+
+	in render:
+		<button onclick={this.props.add}>Add to Cart</button>
+
+GOAL:
+	On button click of "Add to Cart" button, call onclick function, 
+	and pass (this.props.data.name, null, null) as parameters somehow.

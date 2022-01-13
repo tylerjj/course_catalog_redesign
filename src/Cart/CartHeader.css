@@ -1,0 +1,21 @@
+.CartHeader-Navbar {
+    background: #A4161A;
+    border-radius: 15px;
+    box-shadow: 0px 04px 4px;
+    padding-inline:12px;
+    margin-inline:12px;
+}
+.CartHeader-Brand {
+    color: rgba(255,255,255,0.9);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.CartHeader-CartIcon {
+   padding: 8px;
+}
+
+.CartHeader-ViewCartBtn {
+    padding: 6px 20px;color: #0B090A;background: #F5F3F4;font-family: 'Roboto Condensed', sans-serif;box-shadow: 04px 04px 2px;
+}
